@@ -1,89 +1,118 @@
-1. Rules:
-    1. HomeWork : 30 Question : Failure: 500 Rupee Fine.
-    2. Skip Class: 1000 Fine.
 
-2. Post Class : 5 Question
-3. Git: https://www.youtube.com/watch?v=q8EevlEpQ2A&t=3s
-4. https://docs.google.com/spreadsheets/d/1CHU67y60L5hbR_w_wt2FUPTidje9hI7LWCt35a5hIzo/edit?gid=0#gid=0
-5. Complete Python in August
+📚 Python Notes – 11 August 2025
+(Goal: Complete Python in August)
 
-11 August 2025
+------------------------------------------------------------
+1. What is Python?
+Python is like a language for talking to your computer.
+You give instructions in simple English-like code, and Python makes your machine do the work.
 
-6. Python:
-    a) Is a language which our machine understand.
-    b) High Level Language: 
-        Example: Lets go to Lulu Mall
-    c) Interpreted Language:
-        source code {Python Complier} -> byte code {Python Virtaul Machine} -> Machine code
-        Python interpreter run line by line and it not directly sent to machine.
-    d) Dynamic Type Language
-        Java : 
-                int a = 11;
-            Python :
-                a = 11
-    e) Object Oritend Programing Language:
-        OOPS 
-    f) General Purpose Language:
-        AI(TensorFlow, Pytorch), Data Science(numpy, pandas, matplotlib, seaborn, keras, ntlk, scikit-learn, xgboost), Web Devlopment(Django, Flask), Automation, Testing
+------------------------------------------------------------
+2. Features of Python
+1. High-Level Language
+   - Think: “Let’s go to Lulu Mall.” You don’t give GPS coordinates — you just say it in simple terms.
+   - Python is human-friendly like that.
 
-Python Project:
-    1. Virtual Environment:
-        create a virtual environment command: python3 -m venv venv
-    2. Run a Python Program in CLI:
-        python3 <file_name>: python3 aug_11.py
+2. Interpreted Language
+   - Your code → Python Interpreter → Machine Instructions
+   - Runs line by line (slower than compiled languages, but easier to debug).
 
+3. Dynamic Typing
+   - You don’t need to declare variable types.
+   - Example:
+     Java: int a = 11;
+     Python: a = 11
 
-How to Print in Python:
-    print(11)
-    print(True)
-    print("Tony")
-    print(10.75)
+4. Object-Oriented
+   - Uses the OOP (Object-Oriented Programming) style for better structure and reusability.
 
-Identifier:
+5. General Purpose
+   - Can be used in:
+     - AI/ML → TensorFlow, PyTorch
+     - Data Science → Pandas, NumPy
+     - Web Development → Django, Flask
+     - Automation & Scripting
+     - Testing
 
-Keywords & Reserverd Word:
-    Python has Reserverd for its use.
+------------------------------------------------------------
+3. Python Project Basics
+1. Create a Virtual Environment (keeps your project’s packages separate)
+   python3 -m venv venv
 
-Naming Convention in Python:
+2. Run Python File from CLI
+   python3 file_name.py
 
-    variable , function, module_name, packages -> snake_case
-    class, Exception, Enums -> PascalCase
-    constants -> ALLCAPS
-    global/class level private variables -> _single_leading_underscore
-    Strong private variables -> __double_leading_underscore
-    dunder methods/magic methods -> __leading_and_tralling_underscore__
+------------------------------------------------------------
+4. Printing in Python
+print(11)         # Integer
+print(True)       # Boolean
+print("Tony")     # String
+print(10.75)      # Float
 
-How to comment in Python:
-    1.Use Hash/Pound {#} Symbol for single line comment
-    2. 3 Set of Double Quotes
+------------------------------------------------------------
+5. Identifiers & Naming Rules
+Identifiers = Names for things (variables, functions, classes, etc.)
 
-    Purpose : To help other developer to understand what is being done at code level/share core 
-    business logic and is a good practice.
+Naming Conventions:
+Variables, functions, modules, packages  → snake_case   → user_name
+Classes, Exceptions, Enums               → PascalCase   → UserProfile
+Constants                                → ALL_CAPS     → PI = 3.14
+Private variables                        → _single_leading_underscore
+Strong private variables                 → __double_leading_underscore
+Magic/Dunder methods                     → __double_underscore__
 
-How to take an input from a user:
-    to take input from user we need to use a function 
-        {input()} It was takes an input as a string
+------------------------------------------------------------
+6. Comments in Python
+Used to explain code (for you & other devs).
 
-TypeCasting:
+1. Single-line comment → # This is a comment
+2. Multi-line comment:
+   """
+   This is a multi-line
+   comment
+   """
 
-    A process to change a value of a variable from one data type to another.
-    to typecast from one data type function used are: int(), float(), str(), bool()
+Good practice: Write comments to explain logic, not obvious things.
 
-            int	float	bool	str
-    int	TRUE	TRUE	FALSE	TRUE
-    float	FALSE	TRUE	FALSE	TRUE
-    bool	TRUE	TRUE	TRUE	TRUE
-    str	FALSE	FALSE	TRUE	TRUE
+------------------------------------------------------------
+7. Taking User Input
+name = input("Enter your name: ")
+- Input is always taken as a string by default.
 
-Build In Data Types:
+------------------------------------------------------------
+8. Type Casting
+Changing data from one type to another.
 
-    Container to store the data.
+Functions:
+int()   → to integer
+float() → to float
+str()   → to string
+bool()  → to boolean
 
-    Basic Data Types
-    1. Text Data -> string {str}
-    2. Numeric DataType -> integer (int), float, complex
-    3. Boolean Type -> True, False
+Conversion Table:
+From ↓ \ To → | int | float | bool | str
+-----------------------------------------
+int           | ✅  | ✅    | ❌   | ✅
+float         | ❌  | ✅    | ❌   | ✅
+bool          | ✅  | ✅    | ✅  | ✅
+str           | ❌  | ❌    | ✅  | ✅
 
-    Advance Data Types
-    4. Sequence Type : list, tuple, range
-        list is a heterogenous data structure.
+✅ = Works
+❌ = Doesn’t work directly
+
+------------------------------------------------------------
+9. Built-in Data Types
+Python stores data in containers.
+
+Basic Data Types:
+1. Text → str
+2. Numbers → int, float, complex
+3. Boolean → True, False
+
+Advanced Data Types:
+4. Sequence Types → list, tuple, range
+   list = Can store different types of data (heterogeneous)
+   Example:
+   my_list = [1, "Apple", 3.14, True]
+
+------------------------------------------------------------
