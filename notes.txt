@@ -1,0 +1,89 @@
+1. Rules:
+    1. HomeWork : 30 Question : Failure: 500 Rupee Fine.
+    2. Skip Class: 1000 Fine.
+
+2. Post Class : 5 Question
+3. Git: https://www.youtube.com/watch?v=q8EevlEpQ2A&t=3s
+4. https://docs.google.com/spreadsheets/d/1CHU67y60L5hbR_w_wt2FUPTidje9hI7LWCt35a5hIzo/edit?gid=0#gid=0
+5. Complete Python in August
+
+11 August 2025
+
+6. Python:
+    a) Is a language which our machine understand.
+    b) High Level Language: 
+        Example: Lets go to Lulu Mall
+    c) Interpreted Language:
+        source code {Python Complier} -> byte code {Python Virtaul Machine} -> Machine code
+        Python interpreter run line by line and it not directly sent to machine.
+    d) Dynamic Type Language
+        Java : 
+                int a = 11;
+            Python :
+                a = 11
+    e) Object Oritend Programing Language:
+        OOPS 
+    f) General Purpose Language:
+        AI(TensorFlow, Pytorch), Data Science(numpy, pandas, matplotlib, seaborn, keras, ntlk, scikit-learn, xgboost), Web Devlopment(Django, Flask), Automation, Testing
+
+Python Project:
+    1. Virtual Environment:
+        create a virtual environment command: python3 -m venv venv
+    2. Run a Python Program in CLI:
+        python3 <file_name>: python3 aug_11.py
+
+
+How to Print in Python:
+    print(11)
+    print(True)
+    print("Tony")
+    print(10.75)
+
+Identifier:
+
+Keywords & Reserverd Word:
+    Python has Reserverd for its use.
+
+Naming Convention in Python:
+
+    variable , function, module_name, packages -> snake_case
+    class, Exception, Enums -> PascalCase
+    constants -> ALLCAPS
+    global/class level private variables -> _single_leading_underscore
+    Strong private variables -> __double_leading_underscore
+    dunder methods/magic methods -> __leading_and_tralling_underscore__
+
+How to comment in Python:
+    1.Use Hash/Pound {#} Symbol for single line comment
+    2. 3 Set of Double Quotes
+
+    Purpose : To help other developer to understand what is being done at code level/share core 
+    business logic and is a good practice.
+
+How to take an input from a user:
+    to take input from user we need to use a function 
+        {input()} It was takes an input as a string
+
+TypeCasting:
+
+    A process to change a value of a variable from one data type to another.
+    to typecast from one data type function used are: int(), float(), str(), bool()
+
+            int	float	bool	str
+    int	TRUE	TRUE	FALSE	TRUE
+    float	FALSE	TRUE	FALSE	TRUE
+    bool	TRUE	TRUE	TRUE	TRUE
+    str	FALSE	FALSE	TRUE	TRUE
+
+Build In Data Types:
+
+    Container to store the data.
+
+    Basic Data Types
+    1. Text Data -> string {str}
+    2. Numeric DataType -> integer (int), float, complex
+    3. Boolean Type -> True, False
+
+    Advance Data Types
+    4. Sequence Type : list, tuple, range
+        list is a heterogenous data structure.
