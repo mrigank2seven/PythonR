@@ -2,36 +2,80 @@
 
 # 1-10: Basics of Python and Printing
 # Q1: Print the number 100.
+print(100)
 # Q2: Print the boolean value False.
+print(False)
 # Q3: Print your full name using a string.
+name = "Retesh Kumar"
+print(name)
 # Q4: Print a float number 3.1415.
+print(3.1415)
 # Q5: Write a program to print the message "Python is awesome!".
+print("Python is awesome!")
 # Q6: Print the result of 10 + 20.
+print(10+20)
 # Q7: Print the type of the number 25.
+print(type(25))
 # Q8: Print the type of the string "hello".
+print(type("hello"))
 # Q9: Print the result of multiplying 4.5 by 2.
+print(4.5*2)
 # Q10: Print the concatenation of two strings: "Hello" and "World".
-
+print("Hello" + "World")
 # 11-20: Variables and Identifiers Naming
 # Q11: Declare a variable user_name and assign your name to it, then print it.
+user_name = "Retesh"
+print(user_name)
 # Q12: Declare a class named UserProfile with a pass statement.
 # Q13: Define a constant PI and assign it the value 3.14, then print it.
+PI = 3.14
+print(PI)
 # Q14: Create a private variable _secret and assign 12345 to it.
+_secret = 12345
 # Q15: Create a strongly private variable __password and assign "abcd1234".
+__password = "abcd1234"
 # Q16: Write a function named greet_user that prints "Welcome!".
+greet_user = "welcome!"
+print(greet_user)
 # Q17: Create a variable my_age and assign your age, then print it.
+my_age = 28
+print(my_age)
 # Q18: Try to create an identifier starting with a number and note the error.
+#2a = 12
+
+#(venv) C:\Users\retes\PythonR\python_learning>python3 aug_12.py
+ # File "C:\Users\retes\PythonR\python_learning\aug_12.py", line 44
+  #  2a = 12
+   # ^
+#SyntaxError: invalid decimal literal
+
 # Q19: Write a comment explaining what a variable is.
+print("variable are used to define values or used to give comments")
 # Q20: Write a multi-line comment explaining why you use comments.
+print("""Comments are used 
+to stop a specific part of 
+code to run for testing""")
 
 # 21-30: Comments
 # Q21: Add a single-line comment describing your program.
+print("hello brother") # it gives the print of sentence written in quotes.
 # Q22: Add a multi-line comment explaining the purpose of a function you write.
+"""functions are used 
+to give command to 
+execute the program"""
 # Q23: Write a Python script with no comments and then add meaningful comments.
+
 # Q24: Write a comment explaining what the following code does: print(10*5)
+#the code print(10*5) means that 10 is being multiplied by 5 which will give output as 50
 # Q25: Write code with comments that explains taking user input.
+name =input("enter your name:") #here name is used to ask for entering the name by the user
+print(name) # here it is giving out the output entered by the user .
+
 # Q26: Write a comment about why comments should not explain obvious things.
+
 # Q27: Write a comment block for a function that calculates area of a rectangle.
+
+
 # Q28: Write code with comments showing how to comment out a line temporarily.
 # Q29: Write a comment that describes why using snake_case for variables is good practice.
 # Q30: Write a single line comment explaining what 'print()' does.
