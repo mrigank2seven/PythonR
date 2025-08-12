@@ -1,213 +1,127 @@
-5 Quick Review Questions (Post-lecture)
-How do you print "Hello, World!" in Python?
+# Print "Hello, World!" to the console
+print("Hello, World!")
 
-
-What is the purpose of comments in code?
-Purpose of comment is to stop execution of particular command
-
-Which function is used to get input from the user?
-
-python3 main.py (file Extension name is used to get input from user )
-
-
-How do you run a Python script from the command line?
-by entering a command in inverted quotes
-
-
-What is the difference between Python 2 and Python 3? (basic idea)
-Basic Syntax and Print
-Write a Python program to print your name.
-Ans:
+# Get input from the user and store it in the variable 'name'
 name = input("Enter your name: ")
+
+# Print the value stored in 'name'
 print(name)
 
-
-Print the numbers from 1 to 5 on separate lines.
-Ans : a = """1
+# Print numbers from 1 to 5 on separate lines using a multiline string
+a = """1
 2
 3
 4
 5"""
-print (a)
-
-
-
-Print the following exactly as shown:
-
- Hello,
-Python!
-
-Ans : a = """Hello,
-Python!"""
-print (a)
-
-
-Write a program to print the sum of two numbers: 10 and 20.
-
-
-Print a multiline string using triple quotes.
-
-Ans : print(3+3)
-
-What happens if you forget the closing quotation mark on a string? Test and explain.
-Ans :When we forget closing quotation mark on string say 
-	a = "hello world
-	print (a)
-it gives an error which is sytax error.						
-PS C:\Users\retes\OneDrive\Desktop\Python> python3 main.py
-  File "C:\Users\retes\OneDrive\Desktop\Python\main.py", line 1
-    a = "hello world
-        ^
-SyntaxError: unterminated string literal (detected at line 1)
-
-
-Write a comment explaining what print() does.
-Print gives the output of command the user inputs 
-say : a = 10+20
-	print (a) will give output as : 30
-
-
-Write a program to print the phrase: Python is fun!
-Ans : a = "Python is fun!"
-	print (a)
-
-
-Print the result of 7 + 3.
-Ans : a = 7 + 3
-print (a)
-
-Output on running is 10
-
-
-
-What is the output of print(2 * 5)?
-Ans : a = 2 * 5
-print (a)
- Output is 10
-
-
-User Input and Data Types
- 11. Write a program that asks the user for their age and prints it.
-Ans : age = input("Enter your age: ")
-	print (age)
-
-
- 12. What data type is returned by the input() function?
-Ans : () it is used to call a function eg : print ("Hello World")
-
- 13. Convert the user input for age into an integer and print the result.
-Ans : age = input("Enter your age: ")
-print (age)
-print (int(age))
-
-
- 14. Write a program that asks for two numbers and prints their sum.
- Ans : a = int(input("Enter a number :"))
-b = int(input("Enter a number : "))
-sum = a + b
-print(sum)
-
- 15. What happens if you add a string and an integer in Python?
-Ans : a = int(input("Enter a number :"))
-b = int(input("Enter a name : "))
-sum = a + b
-print(sum)
-
-Enter a number :3
-Enter a name : Retesh
-Traceback (most recent call last):
-  File "C:\Users\retes\OneDrive\Desktop\Python\main.py", line 2, in <module>
-    b = int(input("Enter a name : "))
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'Retesh'
-
-
-Errors and Debugging
- 16. Write a program that will cause a syntax error. Explain the error.
-
- a = 10
-b = 20
-print(bool(a b))
-
-
-PS C:\Users\retes\OneDrive\Desktop\Python> python3 main.py
-  File "C:\Users\retes\OneDrive\Desktop\Python\main.py", line 3
-    print(bool(a b))
-               ^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
-
- 17. What error will be raised if you try to print a variable that does not exist? 
-a = For
 print(a)
 
-PS C:\Users\retes\OneDrive\Desktop\Python> python3 main.py
-Traceback (most recent call last):
-  File "C:\Users\retes\OneDrive\Desktop\Python\main.py", line 1, in <module>
-    a = For
-        ^^^
-NameError: name 'For' is not defined
- 18. Fix the following code snippet:
-print("Hello World)
+# Print exactly the following string on separate lines
+a = """Hello,
+Python!"""
+print(a)
 
-What is indentation, and why is it important in Python?
-print ("hello world")
-  print ("I am funny")
-    
-PS C:\Users\retes\OneDrive\Desktop\Python> python3 main.py
-  File "C:\Users\retes\OneDrive\Desktop\Python\main.py", line 2
-    print ("I am funny")
-IndentationError: unexpected indent
+# Print the sum of two numbers: 10 and 20
+print(10 + 20)
 
-Try running print("Hello" + 5) and explain the error.
+# Print a multiline string using triple quotes
+print("""This is a
+multiline string
+example.""")
 
-PS C:\Users\retes\OneDrive\Desktop\Python> python3 main.py 
-Traceback (most recent call last):
-  File "C:\Users\retes\OneDrive\Desktop\Python\main.py", line 1, in <module>
-    print("Hello" + 5)
-          ~~~~~~~~^~~
-TypeError: can only concatenate str (not "int") to str
-Can only add str to str not an integer
+# Example of a syntax error: missing closing quotation mark on a string
+# a = "hello world
+# print(a)
+# This will raise a SyntaxError: unterminated string literal
 
-Miscellaneous
- 21. What is the file extension of Python files? = .py
- 22. How do you write a single-line comment? = Print("I have a class")
- 23. Can Python variables start with numbers? Try and explain. No it cannot start with number as these are illegal variable which gives error for eg : 
+# Explain print() function:
+# print() outputs whatever is passed inside its parentheses to the console
+a = 10 + 20
+print(a)  # Outputs: 30
 
-2A = "Retesh"
-print (2A)
+# Print the phrase "Python is fun!"
+a = "Python is fun!"
+print(a)
 
-PS C:\Users\retes\OneDrive\Desktop\Python> python3 main.py
-  File "C:\Users\retes\OneDrive\Desktop\Python\main.py", line 1
-    2A = "Retesh"
-    ^
-SyntaxError: invalid decimal literal
+# Print the result of 7 + 3
+a = 7 + 3
+print(a)  # Outputs: 10
 
+# Print the result of 2 * 5
+a = 2 * 5
+print(a)  # Outputs: 10
 
- 24. Write a Python program that prints your favorite quote. = print ("No pain no gain")
+# Ask the user for their age and print it
+age = input("Enter your age: ")
+print(age)
 
- 25. How to write a multiline comment in Python? using print ("""Hello
+# input() returns a string data type
+# To convert it to integer use int()
+
+# Convert user input for age to integer and print it
+age = input("Enter your age: ")
+print(age)         # Prints string input
+print(int(age))    # Converts to integer and prints
+
+# Ask for two numbers from the user and print their sum
+a = int(input("Enter a number: "))
+b = int(input("Enter another number: "))
+sum = a + b
+print(sum)
+
+# What happens if you add string and integer in Python?
+# This will cause a TypeError because you cannot add str and int directly.
+
+# Example causing SyntaxError:
+# a = 10
+# b = 20
+# print(bool(a b))
+# This will raise SyntaxError: missing comma or operator between 'a' and 'b'
+
+# Example causing NameError when printing undefined variable:
+# a = For
+# print(a)
+# 'For' is not defined, so Python raises NameError
+
+# Fix the code snippet with missing quote:
+# print("Hello World")
+
+# Indentation is important in Python to define code blocks.
+# Wrong indentation causes IndentationError.
+
+# Example:
+# print("hello world")
+#  print("I am funny")  # Indented unexpectedly - raises error
+
+# Try running print("Hello" + 5)
+# Raises TypeError because you cannot concatenate str and int
+
+# Python file extension is '.py'
+
+# Single-line comments start with '#'
+
+# Python variables cannot start with numbers. Example:
+# 2A = "Retesh"  # SyntaxError
+
+# Print favorite quote
+print("No pain no gain")
+
+# Multiline comment can be done using triple quotes in a string (not exactly a comment but used as multiline string)
+print("""Hello
 lets
-have 
-fun"""
-)
- 26. What happens if you print a number without quotes? 
-Ans :
+have
+fun""")
+
+# Printing a number without quotes outputs the number itself
 print(1)
 
-PS C:\Users\retes\OneDrive\Desktop\Python> python3 main.py
-1
+# To print quotes inside a string, use escaping or different quote types:
+print('She said "Python is fun!"')
+print("It's a nice day!")
 
-print 1
-PS C:\Users\retes\OneDrive\Desktop\Python> python3 main.py
-  File "C:\Users\retes\OneDrive\Desktop\Python\main.py", line 1
-    print 1
-    ^^^^^^^
-SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)
+# Output of print("5" * 3) is "555" because string '5' is repeated 3 times
+print("5" * 3)
 
- 27. Write a program that prints both single and double quotes inside a string.
- 28. What is the output of print("5" * 3)?
-here 5 is a variable which is printed three times 
+# Print the result of 100 divided by 4
+print(100 / 4)  # Outputs: 25.0
 
- 29. Write a program that prints the result of 100 / 4.
- 30. Explain what the Python interpreter does.
-
+# Python interpreter executes the code line by line translating it to machine code and running it.
