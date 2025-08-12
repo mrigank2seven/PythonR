@@ -109,7 +109,7 @@ Basic Data Types:
 2. Numbers → int, float, complex
 3. Boolean → True, False
 
-Advanced Data Types:
+Data Structure:
 4. Sequence Types → list, tuple, range
    list = Can store different types of data (heterogeneous)
    Example:
