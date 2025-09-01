@@ -1,0 +1,47 @@
+# Commands categorized
+content = """
+# Windows Commands for Python, Git, and Django
+
+## 1. Basic Windows Commands
+- `cd <folder>` : Change directory.
+- `dir` : List files and folders in the current directory.
+- `cls` : Clear the terminal screen.
+- `mkdir <folder_name>` : Create a new folder.
+- `del <file>` : Delete a file.
+- `rmdir /s <folder>` : Delete a folder and its contents.
+
+## 2. Python Commands
+- venv\Scripts\activate.bat
+- `python --version` : Check Python version installed.
+- `python` : Start Python interactive shell.
+- `python <script.py>` : Run a Python script.
+- `pip --version` : Check pip version.
+- `pip install <package>` : Install a Python package.
+- `pip list` : Show installed packages.
+- `pip freeze > requirements.txt` : Export installed packages to a file.
+- `pip install -r requirements.txt` : Install packages from a requirements file.
+
+## 3. Git Commands
+- `git --version` : Check Git version installed.
+- `git init` : Initialize a Git repository.
+- `git clone <repo_url>` : Clone a repository from GitHub/GitLab.
+- `git status` : Show changes in the repo.
+- `git add <file>` : Stage a file for commit.
+- `git commit -m "message"` : Commit staged changes with a message.
+- `git push origin <branch>` : Push commits to remote repository.
+- `git pull origin <branch>` : Fetch and merge changes from remote repository.
+- `git branch` : List local branches.
+- `git checkout -b <branch>` : Create and switch to a new branch.
+- `git merge <branch>` : Merge a branch into the current branch.
+
+## 4. Django Commands
+- `django-admin --version` : Check Django version installed.
+- `django-admin startproject <project_name>` : Create a new Django project.
+- `python manage.py runserver` : Start development server.
+- `python manage.py startapp <app_name>` : Create a new Django app.
+- `python manage.py makemigrations` : Generate migration files for models.
+- `python manage.py migrate` : Apply migrations to the database.
+- `python manage.py createsuperuser` : Create an admin user.
+- `python manage.py shell` : Open Django interactive shell.
+- `python manage.py collectstatic` : Collect static files for deployment.
+"""
